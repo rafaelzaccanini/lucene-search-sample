@@ -10,6 +10,6 @@ Contents:
 - Spellchecker to search
 
 Links:
-https://github.com/apache/lucenenet 
-https://lucenenet.apache.org/ 
+- https://github.com/apache/lucenenet 
+- https://lucenenet.apache.org/ 
 
