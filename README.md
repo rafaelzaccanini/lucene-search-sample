@@ -3,7 +3,7 @@
 A simple sample to learn how Lucenet.Net works.
 
 Contents:
-- Create and updating Lucene's index
+- Creating and updating Lucene's index
 - Simple field search
 - Multi field search
 - Sorting hits by relevance
