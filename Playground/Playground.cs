@@ -1,5 +1,5 @@
 ﻿using System;
-using Core.DomainIndex;
+using Core;
 using Core.DomainModel;
 using System.Collections.Generic;
 
@@ -9,15 +9,26 @@ namespace Playground
     {
         public static void Main()
         {
-            var index = new MedicalIndex(true);
+            var index = new MedicalSearch();
 
-            var results = index.Search("Clinica de Odontologia");
-            PrintAll(results);
+            index.UpdateIndexs();
 
-            results = index.Search("Consultórios de Cardiologia");
-            PrintAll(results);
+            // Perfect search
+            //var search = "Odontologia no Acre";
+            //PrintAll(index.Search(search));
+            //Console.Read();
 
+            // Incorrect search using spellchecker
+            var search = "Odonttoloia no Accre";
+            Console.WriteLine("You've written: " + search);
+            
+            search = index.GetSugestion(search);
+            Console.WriteLine("Did you mean: " + search);
+            Console.WriteLine("");
+            
+            PrintAll(index.Search(search));
             Console.Read();
+            
         }
 
         public static void PrintAll(IList<MedicalConsultory> results)
