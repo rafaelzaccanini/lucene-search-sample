@@ -1,6 +1,6 @@
 # lucene-search-sample
 
-A simple sample to learn how Lucenet.Net works.
+A simple sample to learn how LucenetNet works in .NET applications.
 
 Contents:
 - Creating and updating Lucene's index
@@ -10,5 +10,6 @@ Contents:
 - Spellchecker to search
 
 Links:
+https://github.com/apache/lucenenet
 https://lucenenet.apache.org/
-http://lucenenet.apache.org/docs/3.0.3/d2/dc5/class_spell_checker_1_1_net_1_1_search_1_1_spell_1_1_spell_checker.html
+
