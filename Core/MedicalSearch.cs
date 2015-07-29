@@ -29,7 +29,7 @@ namespace Core
 
         #endregion
 
-        public string GetSugestion(string searchText)
+        public string GetSuggestion(string searchText)
         {
             string result = string.Empty;
 
