@@ -22,7 +22,7 @@ namespace Playground
             var search = "Odonttoloia no Accre";
             Console.WriteLine("You've written: " + search);
             
-            search = index.GetSugestion(search);
+            search = index.GetSuggestion(search);
             Console.WriteLine("Did you mean: " + search);
             Console.WriteLine("");
             
